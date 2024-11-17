@@ -44,3 +44,10 @@ function multiples(int $m, float $n): array {
 
     return $result;
 }
+
+//
+
+
+function disemvowel(string $s): string  {
+    return preg_replace('/[aeiouAEIOU]/', '', $s);
+}
