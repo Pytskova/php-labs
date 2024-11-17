@@ -83,3 +83,18 @@ function expanded_form(int $n): string {
 
         return implode(' + ', $result);
     }
+
+
+    //6kyu
+
+
+    function digital_root($number): int
+{
+    if ($number < 10) {
+        return $number;
+    }
+
+    $sum = array_sum(str_split((string)$number));
+
+    return digital_root($sum);
+}
