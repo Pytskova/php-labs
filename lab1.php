@@ -20,3 +20,14 @@ function square_sum(array $numbers) : int {
 }
 
 //
+
+
+function removeEveryOther($array) {
+    $result = [];
+
+    for ($i = 0; $i < count($array); $i += 2) {
+        $result[] = $array[$i];
+    }
+
+    return $result;
+}
