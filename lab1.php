@@ -51,3 +51,20 @@ function multiples(int $m, float $n): array {
 function disemvowel(string $s): string  {
     return preg_replace('/[aeiouAEIOU]/', '', $s);
 }
+
+
+//
+
+
+function square_digits(int $num): int {
+    $digits = str_split((string)$num);
+    
+    $squaredDigits = array_map(function($digit) {
+          return $digit ** 2;
+    }, $digits);
+
+    $result = (int) implode('', $squaredDigits);
+    
+    return $result;
+}
+
