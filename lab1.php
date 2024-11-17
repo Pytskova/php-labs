@@ -7,5 +7,16 @@ function enough($cap, $on, $wait) {
     }
     return $wait - $available;
 }
+
 //
 
+
+function square_sum(array $numbers) : int {
+    $sum = 0;
+    foreach ($numbers as $num) {
+          $sum += $num ** 2; 
+    }
+    return $sum;
+}
+
+//
